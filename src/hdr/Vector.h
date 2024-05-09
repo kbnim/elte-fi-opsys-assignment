@@ -5,10 +5,10 @@
 
 #include "String.h"
 
-/* Opaque type definition of 'Vector'. Returns 'NULL' upon failure. */
+/* Opaque type definition of 'Vector'. */
 typedef struct Vector Vector;
 
-/* Constructor for a 'Vector' object. */
+/* Constructor for a 'Vector' object. Returns 'NULL' upon failure. */
 Vector* vector_construct(void);
 
 /* Destructor for a 'Vector' object. */
