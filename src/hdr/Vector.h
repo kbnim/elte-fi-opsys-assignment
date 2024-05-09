@@ -8,10 +8,10 @@
 /* Opaque type definition of 'Vector'. */
 typedef struct Vector Vector;
 
-/* Constructor for a 'Vector' object. Returns 'NULL' upon failure. */
+/* Constructor for a 'Vector' object. */
 Vector* vector_construct(void);
 
-/* Destructor for a 'Vector' object. */
+/* Destructor for a 'Vector' object. Returns 'NULL' upon failure. */
 void vector_destroy(Vector* vector);
 
 /* Returns the number of elements stored in the vector. */
