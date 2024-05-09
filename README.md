@@ -28,10 +28,11 @@ Készítsen C  nyelvű programot ami  ezt a feladatot megoldja, a megoldásnak v
 
 To compile the source code, simply run the following command.
 
-```bash
-gcc -W -Wall -Wextra -pedantic main.c src/string.c, src/vector.c src/application.c -o bunny
+```shell
+gcc -W -Wall -Wextra -pedantic main.c src/String.c, src/Vector.c src/Application.c src/Posixutils.c -o bunny
 ```
 
 ## Remarks
 
-Originally, the requirements stated to NOT use header files, to NOT modularise our code. As the due dates are over, I decided to refactor the code base so that it be clearer to see and evaluate each component separately.
+- Originally, the requirements DISCOURAGED us to use header files and NOT to modularise our code. As the due dates are over, I decided to refactor the code base so that it be clearer to see and evaluate each component separately.
+- In the header files, I used macros containing lower-case letters. While this is not a standard solution (it certainly goes against conventional C style-guides), I chose it to reduce lengthy header file names.
