@@ -2,8 +2,8 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "String.h"
-#include "MemoryAllocation.h"
+#include "hdr/String.h"
+#include "hdr/MemoryAllocation.h"
 
 struct String
 {

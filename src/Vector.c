@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Vector.h"
-#include "MemoryAllocation.h"
+#include "hdr/Vector.h"
+#include "hdr/MemoryAllocation.h"
 
 struct Vector
 {

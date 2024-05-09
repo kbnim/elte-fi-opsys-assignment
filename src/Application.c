@@ -13,9 +13,9 @@
 #include <sys/sem.h>  // semaphores
 #include <sys/stat.h> // semaphore funky macros
 
-#include "Application.h"
-#include "PosixUtils.h"
-#include "MemoryAllocation.h"
+#include "hdr/Application.h"
+#include "hdr/PosixUtils.h"
+#include "hdr/MemoryAllocation.h"
 
 /* Inserts a new poem to the end of the database. */
 static void application_command_insert(Application* application);
@@ -60,7 +60,7 @@ void application_initialise(Application *const application, const char* const na
 
     if (application->file == NULL)
     {
-        perror("Error: opening file failed.");
+        fprintf(stderr, "Error: opening file \"%s\" failed.\n", FILENAME);
         exit(-1);
     }
 

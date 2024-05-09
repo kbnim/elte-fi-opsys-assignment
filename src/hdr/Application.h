@@ -5,7 +5,7 @@
 
 #include "Vector.h"
 
-#define FILENAME "./poems.txt"
+#define FILENAME "./src/file/poems.txt"
 #define MAX_NUMBER_OF_CHILDREN 4
 #define PROGRAM_NAME_MAX_LENGTH 1024
 
