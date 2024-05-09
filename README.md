@@ -26,11 +26,19 @@ Készítsen C  nyelvű programot ami  ezt a feladatot megoldja, a megoldásnak v
 
 ## Compilation
 
-To compile the source code, simply run the following command.
+To compile the source code, simply run the `Makefile` the following way.
 
 ```shell
-gcc -W -Wall -Wextra -pedantic main.c src/String.c, src/Vector.c src/Application.c src/Posixutils.c -o bunny
+make
 ```
+
+The compiled program can be executed via the following name.
+
+```shell
+./bunny
+```
+
+Please note that the path of the `poems.txt` file is hard-coded, so if the executable is moved or copied, make sure to do so alongside the text file.
 
 ## Remarks
 
